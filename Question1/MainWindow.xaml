@@ -1,0 +1,57 @@
+﻿<Window x:Class="Question1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Question1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label x:Name="Title" FontSize="30" Grid.Column="0" Grid.ColumnSpan="9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="DodgerBlue"></Label>
+        <Label x:Name="fnameTitle" Grid.Column="1" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <Label x:Name="lnameTitle" Grid.Column="3" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <Label x:Name="emailTitle" Grid.Column="5" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <Label x:Name="userroleTitle" Grid.Column="7" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+
+        <TextBox x:Name="fnameInput" Grid.Column="1" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+        <TextBox x:Name="lnameInput" Grid.Column="3" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+        <TextBox x:Name="emailInput" Grid.Column="5" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+        <TextBox x:Name="userroleInput" Grid.Column="7" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+        
+        <Label x:Name="fnameError" Grid.Column="1" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <Label x:Name="lnameError" Grid.Column="3" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <Label x:Name="emailError" Grid.Column="5" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <Label x:Name="userroleError" Grid.Column="7" Grid.Row="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+
+        <Label x:Name="password1Title" Grid.Column="1" Grid.Row="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <Label x:Name="password2Title" Grid.Column="3" Grid.Row="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+
+        <TextBox x:Name="password1Input" Grid.Column="1" Grid.Row="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+        <TextBox x:Name="password2Input" Grid.Column="3" Grid.Row="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+        <Label x:Name="passwordError" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <Label x:Name="usernameOutput" Grid.Column="5" Grid.Row="6"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <Button x:Name="Submit" Content="Submit Button" Grid.Column="7" Grid.Row="6" Click="Submit_Click"></Button>
+    </Grid>
+</Window>
